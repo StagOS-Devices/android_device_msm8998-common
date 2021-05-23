@@ -93,7 +93,6 @@ PRODUCT_PACKAGES += \
     android.hardware.audio@2.0-service \
     android.hardware.audio.effect@6.0-impl \
     audio.a2dp.default \
-    audio_amplifier.msm8998 \
     audio.primary.msm8998 \
     audio.r_submix.default \
     audio.usb.default \
@@ -294,7 +293,7 @@ PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service.oneplus_msm8998
 
 # LiveDisplay
-PRODUCT_PACKAGES += \
+#PRODUCT_PACKAGES += \
     vendor.lineage.livedisplay@2.0-service.oneplus_msm8998
 
 # Media
@@ -359,7 +358,7 @@ PRODUCT_PACKAGES += \
     libstagefrighthw
 
 # Prebuilts
-PRODUCT_PACKAGES += \
+#PRODUCT_PACKAGES += \
     GoogleCamera
 
 PRODUCT_COPY_FILES += \
@@ -516,9 +515,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_BOOT_JARS += \
     WfdCommon
 
-# NezukoOS
-NEZUKO_BUILD_TYPE := OFFICIAL
-NEZUKO_MAINTAINER := Maitreya29
 
 # Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
